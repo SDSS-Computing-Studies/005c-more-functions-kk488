@@ -12,4 +12,9 @@ Sample assertions:
 assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
-
+def covertTemp(t,unit):
+    if unit=="C":
+        temp=t*9/5+32
+    elif unit=="F":
+        temp=(t-32)*5/9
+    return temp
